@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: #F5F0E6;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  color: #4B3B2B;
+  background-color: #fefcf9;
+}
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+}
