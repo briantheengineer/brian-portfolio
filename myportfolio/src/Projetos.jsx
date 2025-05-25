@@ -29,7 +29,7 @@ export default function Projetos() {
     >
       <h2 className="text-4xl font-serif font-semibold mb-12 text-terra-dark">Projetos</h2>
       <div className="grid md:grid-cols-3 gap-10">
-        {projetos.map(({ titulo, descricao }, i) => (
+        {projetos.slice(0, 3).map(({ titulo, descricao }, i) => (
           <div
             key={i}
             className="border border-terra-medium rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer bg-terra-light"
@@ -41,11 +41,12 @@ export default function Projetos() {
       </div>
       <div className="mt-10 text-center">
         <a
-          href="/projetos-todos"
-          className="text-terra-base hover:underline font-medium"
-        >
-          Ver todos os projetos &rarr;
-        </a>
+  href="/projetos-todos"
+  className="text-terra-base hover:underline font-medium"
+>
+  Ver todos os projetos &rarr;
+</a>
+
       </div>
     </section>
   )
